@@ -9,7 +9,13 @@ Weeks is = 7 days
 decimals within the return is allowed..
 '''
 
+first_name = input("Enter your first name: ") # assigns input to first_name
+print(first_name)
 
 days = int(input("How many days until your birthday? "))
 
-print(round(days/7, 2))
+print(f"Hi {first_name}, only {days} days until your birthday!")
+
+weeks = (round(days/7, 2)) # rounds to 2 decimal places
+
+print(f"Hi {first_name}, only {weeks} weeks until your birthday!")

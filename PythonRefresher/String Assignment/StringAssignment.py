@@ -19,3 +19,7 @@ print(f"Hi {first_name}, only {days} days until your birthday!")
 weeks = (round(days/7, 2)) # rounds to 2 decimal places
 
 print(f"Hi {first_name}, only {weeks} weeks until your birthday!")
+
+sentence = "Hi {}, only {} weeks until your birthday!"
+
+print(sentence.format(first_name, weeks))

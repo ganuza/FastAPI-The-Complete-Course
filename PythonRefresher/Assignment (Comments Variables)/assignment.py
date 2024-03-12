@@ -1,17 +1,14 @@
 """
-- You have $50
-- You buy an item that is $15
-- With a tax of 3%
+Write Python program to do:
+- you have $50
+- you buy an item that is $15, taxed at 3%
 - print how much money you have left
 """
 
-money = 50
-item = 15
+balance = 50
+cost = 15
 tax = .03
 
-money_left = money - item - (item * tax)
+money_left = balance - (cost * (1 + tax))
 
 print(money_left)
-
-print(50 - 15 - (15 * .03))
-
